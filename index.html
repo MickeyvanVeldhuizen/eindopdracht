@@ -3,9 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Eindopdracht Mickey van Veldhuizen</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="placeholder">
+        </div>
+        <div class="nav-links">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </div>
+    </nav>
+    <div class="center-container">
+        <header>
+            <h1>Minecraft axolotl plush</h1>
+            <div class="header-container">
+                <img src="images/axolotl.avif" alt="axolotl">
+                <div class="nav-price">
+                    <h2>$18,39</h2>
+                    <a href="https://www.amazon.com/Mattel-Minecraft-Axolotl-Inspired-Character/dp/B08V89W31F?th=1">Koop nu!</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="reviews">
+                <card>
+                    <div class="card-text">
+                        <h3>Sarah Johnson</h3><br>
+                        This is super cute. Got it for my 5 year old niece. She loves it! Very well constructed.
+                    </div>
+                    <div class="card-images">
+                        <img src="images/nether-star.gif" alt="Ster">
+                        <img src="images/nether-star.gif" alt="Ster">
+                        <img src="images/nether-star.gif" alt="Ster">
+                        <img src="images/nether-star.gif" alt="Ster">
+                        <img src="images/nether-star.gif" alt="Ster">
+                    </div>
+                </card>
+                <card>
+                    <div class="card-text">
+                        <h3>Michael Smith</h3><br>
+                        My son loves it. The pixelated edges are a little stiff but overall super soft!
+                    </div>
+                    <div class="card-images">
+                        <img src="images/nether-star.gif" alt="Ster">
+                        <img src="images/nether-star.gif" alt="Ster">
+                        <img src="images/nether-star.gif" alt="Ster">
+                        <img src="images/nether-star.gif" alt="Ster">
+                        <img src="images/nether-star.gif" alt="Ster">
+                    </div>
+                </card>
+                <card>
+                    <div class="card-text">
+                        <h3>Emily Davis</h3><br>
+                        It’s super cute and the only reason it’s 4 stars and not 5 is because I thought it would be a bit bigger. I still love it but I would definitely buy another if they made a larger sized one.    
+                    </div>
+                    <div class="card-images">
+                        <img src="images/nether-star.gif" alt="Ster">
+                        <img src="images/nether-star.gif" alt="Ster">
+                        <img src="images/nether-star.gif" alt="Ster">
+                        <img src="images/nether-star.gif" alt="Ster">
+                    </div>
+                </card>
+            </section>
+            <section class="form">
+                <form action="send" method="POST">
+                    <section class="contact-formulier">
+                        <h1>Hulp nodig?</h1>
+                        <div class="name">
+                            <div class="side-by-side">
+                                <label for="first-name">Voornaam:*</label>
+                                <input type="text" id="first-name" name="name" placeholder="Voer voornaam in..." required>
+                            </div>
+                            <div class="side-by-side">
+                                <label for="first-name">Achternaam:*</label>
+                                <input type="text" id="last-name" name="name" placeholder="Voer achternaam in..." required>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <div class="side-by-side">
+                                <label for="email">E-mail:*</label>
+                                <input type="email" id="email" name="email" placeholder="Voer e-mailadres in ..." required>
+                            </div>
+                        </div>
+                        <div class="personal-info">
+                            <div class="side-by-side">
+                                <label for="woonplaats">Woonplaats:*</label>
+                                <input type="text" id="woonplaats" name="city" placeholder="Voer woonplaats in..." required>
+                            </div>
+                            <div class="side-by-side">
+                                <label for="geboortedatum">Geboortedatum:*</label>
+                                <input type="date" id="geboortedatum" name="birthdate" required>
+                            </div>
+                        </div>
+                        <div class="side-by-side">
+                            <label for="subject">Onderwerp:*</label>
+                            <div class="subject">
+                                <select id="subject" name="subject" required>
+                                    <option value="">Kies onderwerp</option>
+                                    <option value="0">Plushie kwaliteit</option>
+                                    <option value="1">Plushie prijs</option>
+                                    <option value="2">Plushie varianten</option>
+                                    <option value="3">Anders</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <label for="vraag">Jouw vraag:*</label>
+                            <textarea type="text" id="vraag" name="question" required></textarea>
+                        </div>
+                        <div class="side-by-side">
+                            <div class="newletter">
+                                <div class="newsletter-titel">
+                                <label for="newsletter">Inschrijven voor nieuwsbrief?*</label>
+                                </div>
+                                <div class="newsletter">
+                                    <div class="yes">
+                                        <input type="radio" id="newsletter-agree" name="newsletter" required>
+                                        <label for="newsletter-agree">Ja</label>
+                                    </div>
+                                    <div class="no">
+                                        <input type="radio" id="newsletter-disagree" name="newsletter" required>
+                                        <label for="newsletter-disagree">Nee</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="akkoord">
+                            <input type="checkbox" id="voorwaarden" name="voorwaarden">
+                            <label for="voorwaarden">Ik ga akkoord met de algemene voorwaarden.*</label>
+                        </div>
     
+                        <button type="submit">Verstuur e-mail</button>
+                    </section>
+                </form>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="logo">
+            <img src="images/logo.png" alt="placeholder">
+        </div>
+        <div class="footer-text">
+            Privacyverklaring   
+        </div>
+        <div class="footer-text">
+            Algemene voorwaarden
+        </div>
+        <div class="footer-text">
+            Cookiebeleid
+        </div>
+        <div class="footer-text">
+            Contact
+        </div>
+    </footer>
 </body>
 </html>
