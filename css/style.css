@@ -12,7 +12,7 @@ body {
     background-color: rgb(228, 240, 255);
 }
 
-h1 {
+h1, h4 {
     font-family: 'Pixelify Sans', cursive;
 }
 
@@ -319,4 +319,25 @@ button {
     font-family: 'Pixelify Sans', cursive;
     font-size: 1.3rem;
     border-radius: 10px;
+}
+
+@media (orientation: portrait) {
+    nav {
+        flex-direction: column;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+    }
+    footer, .header-container {
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+        height: 25vh;
+    }
+    header img{
+        width: 100vw;
+        height: 40vh;
+    }
 }
